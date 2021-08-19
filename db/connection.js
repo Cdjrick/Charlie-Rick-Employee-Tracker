@@ -8,24 +8,9 @@ const db = mysql.createConnection(
     user: 'root',
     // Your MySQL password
     password: 'midnight',
-    database: 'employees'
+    database: 'employeesDB'
   },
   console.log('Connected to the employees database.')
 );
-
-//Show all candidates
-// db.query('SELECT * FROM employee, roleTable, department', (err, rows) => {
-//   // console.table([
-//   //     {
-//   //       id: 'foo',
-//   //       age: 10
-//   //     }, {
-//   //       name: 'bar',
-//   //       age: 20
-//   //     }
-//   //   ]);
-
-//   console.log(rows)
-// })
 
 module.exports = db;
